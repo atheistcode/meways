@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- ------------------------------ Fav Icon ------------------------------ -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="../favicon.gif" type="image/gif" />
+  <link rel="icon" href="../favicon.png" type="image/png" />
+  <!-- Terms of use: This icon is licensed under the Creative Commons Attribution 4.0 International license "https://fontawesome.com/license". It is attributed to fontawesome.com and the original version can be found here "https://fontawesome.com/icons/monero?style=brands". We converted this icon from svg format to ico format.  -->
+
+  <title>MEWAYS - Contact Us</title>
+
+  <!-- ------------------------------ SHARED STYLESHEETS ------------------------------ -->
+
+  <link rel="stylesheet" href="../shared/shared-style.css?v41" />
+
+  <!-- ------------------------------ HOME STYLESHEETS ------------------------------ -->
+
+  <link rel="stylesheet" href="contact-style.css?v41" />
+
+  <!-- ------------------------------ MEDIA QUERY STYLESHEETS ------------------------------ -->
+
+  <link rel="stylesheet" href="contact-media-style.css?v41" />
+
+  <!-- ------------------------------ ICONS ------------------------------ -->
+
+  <script src="https://kit.fontawesome.com/09a738e9db.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- ------------------------------ BACKDROP ------------------------------ -->
+
+  <div class="backdrop"></div>
+
+  <!-- ------------------------------ MAIN HEADER ------------------------------ -->
+
+  <header class="main-header">
+    <div class="main-header__brand">
+      <a href="../index.html">
+        <i class="fab fa-monero"></i>
+        <span>MEWAYS</span>
+      </a>
+    </div>
+
+    <ul class="main-header__navigation">
+      <li class="main-header__navigation__item">
+        <a href="../index.html">Home</a>
+      </li>
+      <li class="main-header__navigation__item">
+        <a href="../index.html#servicesSec">Services</a>
+      </li>
+      <li class="main-header__navigation__item">
+        <a href="../index.html#workSec">Work</a>
+      </li>
+      <li class="main-header__navigation__item">
+        <a href="../index.html#aboutSec">About</a>
+      </li>
+      <li>
+        <a class="btn-arrows--main-header" href="index.html">
+          <span>Contact</span>
+          <i class="fas fa-angle-double-right"></i>
+        </a>
+      </li>
+    </ul>
+
+    <span class="main-header__icon">
+      <i class="fas fa-bars"></i>
+    </span>
+  </header>
+
+  <!-- ------------------------------ RESPONSIVE NAVIGATION ------------------------------ -->
+
+  <div class="responsive-navigation-Wrapper">
+    <div class="responsive-navigation__brand">
+      <a href="../index.html">
+        <i class="fab fa-monero"></i>
+        <span>MEWAYS</span>
+      </a>
+    </div>
+
+    <ul class="responsive-navigation__navigation">
+      <li class="responsive-navigation__navigation__item">
+        <a href="../index.html">Home</a>
+      </li>
+      <li class="responsive-navigation__navigation__item">
+        <a href="../index.html#servicesSec">Services</a>
+      </li>
+      <li class="responsive-navigation__navigation__item">
+        <a href="../index.html#workSec">Work</a>
+      </li>
+      <li class="responsive-navigation__navigation__item">
+        <a href="../index.html#aboutSec">About</a>
+      </li>
+      <li>
+        <a class="btn-arrows--responsive-navigation" href="index.html">
+          <span>Contact</span>
+          <i class="fas fa-angle-double-right"></i>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="responsive-navigation__icon">
+    <i class="far fa-times-circle"></i>
+  </div>
+
+  <!-- ------------------------------ FORM SECTION ------------------------------ -->
+  <div class="form-section">
+    <div class="form-section__wrapper--overlay">
+      <div class="form-section__wrapper">
+        <h2 class="form-section__wrapper__header">GET A FREE QUOTE</h2>
+        <p class="form-section__wrapper__subtext">Or Let Us Help You</p>
+
+        <form action="#" class="form-section__wrapper__form flex-container" autocomplete="off">
+          <div class="flex-item-1">
+            <div class="form__name">
+              <label for="name" class="form__item-header">Full Name:</label>
+              <input type="text" id="name" required placeholder="Your Name" />
+            </div>
+
+            <div class="form__email">
+              <label for="email" class="form__item-header">Email Address:</label>
+              <input type="email" id="email" required placeholder="Your Email Address" />
+            </div>
+
+            <div class="form__phone" class="form__item-header">
+              <label for="phone" class="form__item-header">Phone Number:</label>
+              <input type="tel" id="phone" placeholder="Your Phone Number" />
+            </div>
+
+            <div class="form__gender">
+              <div class="form__item-header">Gender:</div>
+              <div class="form__gender__wrapper">
+                <div class="form__gender__wrapper__item">
+                  <input type="radio" name="gender" value="male" id="male" />
+                  <label for="male">Male</label><br>
+                </div>
+                <div class="form__gender__wrapper__item">
+                  <input type="radio" name="gender" value="female" id="female" />
+                  <label for="female">Female</label><br>
+                </div>
+                <div class="form__gender__wrapper__item">
+                  <input type="radio" name="gender" value="other" id="other" checked />
+                  <label for="other">Other<br>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__contact-reason">
+              <div class="form__item-header">Reason for contacting us:</div>
+              <select name="contact-reason" id="contact-reason" required>
+                <option value="">Please select one</option>
+                <optgroup label="Quotes">
+                  <option value="quote-email">Free quote by email</option>
+                  <option value="quote-phone">Free quote by phone</option>
+                </optgroup>
+                <optgroup label="customer-service">
+                  <option value="help-email">Inquire by email</option>
+                  <option value="help-phone">Inquire by phone</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex-item-2">
+            <div class="form__message">
+              <span class="form__item-header">Subject:</span>
+              <textarea name="message" id="message" required placeholder="How can we help you? ..."></textarea>
+            </div>
+
+            <div class="form__agree-terms">
+              <input type="checkbox" value="agree-terms" id="agree-terms">
+              <label for="agree-terms">Agree to our <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <div class="form__submit">
+            <input id="sendEmail" type="submit" value="Send Us">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------------ FOOTER SECTION ------------------------------ -->
+
+  <section class="footer-section">
+    <div class="footer-section__items-wrapper">
+      <div class="footer-section__items-wrapper__item footer-section__items-wrapper__item--location">
+        <div class="footer-section__items-wrapper__item__location-body">
+          <h4 class="footer-section__items-wrapper__item__header">
+            OUR LOCATION
+          </h4>
+          <p>123 Street, District</p>
+          <p>City Name, Code 1234</p>
+          <p>+123-456-789</p>
+        </div>
+        <a class="btn-arrows--footer-section" href="index.html">
+          <span>CONTACT US</span>
+          <i class="fas fa-angle-double-right"></i>
+        </a>
+      </div>
+
+      <div class="footer-section__items-wrapper__item">
+        <h4 class="footer-section__items-wrapper__item__header">SERVICES</h4>
+        <ul class="footer-section__items-wrapper__item__services-list">
+          <li>
+            <a href="../index.html#servicesSec">First Service</a>
+          </li>
+          <li>
+            <a href="../index.html#servicesSece">Second Service</a>
+          </li>
+          <li>
+            <a href="../index.html#servicesSec">Third Service</a>
+          </li>
+          <li>
+            <a href="../index.html#servicesSec">Fourth Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section__items-wrapper__item">
+        <h4 class="footer-section__items-wrapper__item__header">
+          TEMPLATE LIST
+        </h4>
+        <ul class="footer-section__items-wrapper__item__template-list">
+          <li>
+            <a href="#">First Template Item</a>
+          </li>
+          <li>
+            <a href="#">Second Template Item</a>
+          </li>
+          <li>
+            <a href="#">Third Template Item</a>
+          </li>
+          <li>
+            <a href="#">Fourth Template Item</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section__items-wrapper__item">
+        <h4 class="footer-section__items-wrapper__item__header">
+          FOLLOW US AT
+        </h4>
+        <ul class="footer-section__items-wrapper__item__social-media-list">
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+              <span>Youtube</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+              <span>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------ FOOTER ------------------------------ -->
+
+  <footer class="footer">
+    <div class="footer__body"><span>© 2019 </span><span>MEWAYS</span></div>
+  </footer>
+
+  <!-- ------------------------------ SCRIPTS ------------------------------ -->
+
+  <script src="../shared/shared-script.js?v41"></script>
+</body>
+
+</html>

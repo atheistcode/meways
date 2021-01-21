@@ -1,0 +1,26 @@
+/* ------------------------------ GLOBAL VARIABLES ------------------------------ */
+:root {
+  /* COLORS */
+  --dominant-color: #ff5714;
+  --bg-color: #ffffff;
+  --accent-color: #090c9b;
+  --fourth-color: #000000;
+  --fifth-color: #ffa400;
+
+  /* FONT FAMILIES */
+  --logo-font: "Audiowide", cursive;
+  --main-font: "Source Sans Pro", sans-serif;
+  --secondary-font: "Titillium Web", sans-serif;
+
+  /* FONT SIZES */
+  --header-1: 2.8rem;
+  --header-2: 2.2rem;
+  --header-3: 1.7rem;
+  --header-4: 1.4rem;
+  --header-5: 0.75rem;
+  --text-x-big: 1.5rem;
+  --text-big: 1.2rem;
+  --text-normal: 1.125rem;
+  --text-small: 0.9rem;
+  --text-x-small: 0.7rem;
+}

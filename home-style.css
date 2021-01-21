@@ -1,0 +1,406 @@
+/* ------------------------------ BODY ------------------------------ */
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+}
+
+/* ------------------------------ INTRO SECTION ------------------------------ */
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  height: 35rem;
+  background-image: url("images/intro-section-bg-1.jpg");
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ---------- INTRO SECTION CONTENT WRAPPER ---------- */
+.intro-section__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* ---------- INTRO SECTION CONTENT WRAPPER HEADER ---------- */
+.intro-section__content-wrapper__header {
+  margin: 8rem auto 1rem auto;
+  max-width: 90%;
+  /* font-size: var(--header-1); */
+  font-size: 3rem;
+  color: var(--bg-color);
+}
+
+/* ---------- INTRO SECTION CONTENT WRAPPER SUBTEXT ---------- */
+.intro-section__content-wrapper__subtext {
+  margin-bottom: 3rem;
+  max-width: 90%;
+  font-size: var(--text-x-big);
+  color: var(--fifth-color);
+}
+
+/* ---------- INTRO SECTION CONTENT WRAPPER BUTTONS ---------- */
+.intro-section__content-wrapper__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.intro-section__content-wrapper__buttons > * {
+  margin: auto 1.5rem 1.5rem 1.5rem;
+}
+
+.btn-arrows--intro-section {
+  width: 14.5rem;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 30px;
+  padding: 0.7rem;
+  font-size: var(--text-normal);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.btn-arrows--intro-section > span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.btn-arrows--intro-section:hover > span {
+  transform: translateX(-1.2rem);
+}
+.btn-arrows--intro-section i {
+  opacity: 0;
+  transform: translateX(-0.7rem);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.btn-arrows--intro-section:hover i {
+  opacity: 1;
+  transform: translateX(1.2rem);
+}
+
+.btn-arrows--intro-section--color-1 {
+  border-color: var(--bg-color);
+  background-color: rgba(255, 87, 20, 0.7);
+  color: var(--bg-color);
+}
+.btn-arrows--intro-section--color-1:hover {
+  border-color: var(--dominant-color);
+  background-color: var(--dominant-color);
+}
+
+.btn-arrows--intro-section--color-2 {
+  border-color: var(--bg-color);
+  background-color: rgba(9, 12, 155, 0.7);
+  color: var(--bg-color);
+}
+.btn-arrows--intro-section--color-2:hover {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+/* ------------------------------ SERVICES SECTION ------------------------------ */
+
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: var(--dominant-color);
+}
+
+/* ---------- SERVICES SECTION SERVICE ---------- */
+.services-section__service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 18rem;
+  padding: 1rem;
+}
+
+.services-section__service__icon i {
+  font-size: 4rem;
+  color: var(--bg-color);
+  transition: transform 0.3s ease;
+}
+.services-section__service__icon:hover i {
+  transform: scale(0.9);
+}
+
+.services-section__service__header {
+  margin: 1rem auto;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--header-5);
+  letter-spacing: 0.2rem;
+  color: var(--fourth-color);
+  cursor: default;
+  transition: color 0.3s ease;
+}
+.services-section__service__header:hover {
+  color: var(--bg-color);
+}
+
+.services-section__service__body {
+  line-height: 1.3rem;
+  font-size: var(--text-normal);
+  color: var(--bg-color);
+}
+
+/* ------------------------------ WORK SECTION ------------------------------ */
+
+.work-section {
+  background-color: var(--bg-color);
+}
+
+/* ---------- WORK SECTION HEADER ---------- */
+.work-section__header {
+  margin: 3rem 1rem 1rem 1rem;
+  font-size: var(--header-2);
+  font-weight: bold;
+  color: var(--dominant-color);
+  text-align: center;
+}
+
+/* ---------- WORK SECTION SUBTEXT ---------- */
+.work-section__subtext {
+  margin: auto 1rem;
+  font-size: var(--text-big);
+  color: var(--fourth-color);
+  text-align: center;
+}
+
+/* ---------- WORK SECTION PORTFOLIO WRAPPER ---------- */
+.work-section__portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-basis: 90%;
+  margin-bottom: 3rem;
+}
+
+/* ---------- WORK SECTION PORTFOLIO WRAPPER ITEM ---------- */
+.work-section__portfolio-wrapper__item {
+  margin: 2.5rem 1rem auto 1rem;
+  width: 18rem;
+  height: 11rem;
+  background-position: bottom;
+  background-size: cover;
+  outline: 4px solid var(--bg-color);
+  outline-offset: 0;
+  transition: transform 0.5s ease, outline 0.5s ease, outline-offset 0.5s ease;
+}
+.work-section__portfolio-wrapper__item:hover {
+  outline: 4px solid var(--dominant-color);
+}
+/* for javascript use */
+/* the following code will be added when clicking on .work-section__portfolio-wrapper__item */
+/* the following code will be added to .work-section__portfolio-wrapper__item */
+.effect-1 {
+  outline: 4px solid var(--dominant-color);
+}
+
+.work-section__portfolio-wrapper__item__overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: var(--text-small);
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.work-section__portfolio-wrapper__item:hover
+  .work-section__portfolio-wrapper__item__overlay {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 1);
+}
+/* for javascript use */
+/* the following code will be added when clicking on .work-section__portfolio-wrapper__item */
+/* the following code will be added to .work-section__portfolio-wrapper__item__overlay */
+.effect-2 {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 1);
+}
+
+.work-section__portfolio-wrapper__item__overlay > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  transition: height 0.4s ease-in-out;
+}
+.work-section__portfolio-wrapper__item:hover
+  .work-section__portfolio-wrapper__item__overlay
+  > div {
+  height: 2rem;
+}
+/* for javascript use */
+/* the following code will be added when clicking on .work-section__portfolio-wrapper__item */
+/* the following code will be added to .work-section__portfolio-wrapper__item__overlay
+  > div */
+.effect-3 {
+  height: 2rem !important;
+}
+
+.work-section__portfolio-wrapper__item__overlay > div > span {
+  display: inline-block;
+  padding-top: 0.5rem;
+}
+
+.work-section__portfolio-wrapper__item:nth-child(1) {
+  background-image: url("images/work-1.jpg");
+}
+.work-section__portfolio-wrapper__item:nth-child(2) {
+  background-image: url("images/work-2.jpg");
+}
+.work-section__portfolio-wrapper__item:nth-child(3) {
+  background-image: url("images/work-3.jpg");
+}
+.work-section__portfolio-wrapper__item:nth-child(4) {
+  background-image: url("images/work-4.jpg");
+}
+.work-section__portfolio-wrapper__item:nth-child(5) {
+  background-image: url("images/work-5.jpg");
+  background-position-y: 35%;
+}
+.work-section__portfolio-wrapper__item:nth-child(6) {
+  background-image: url("images/work-6.jpg");
+}
+
+/* ------------------------------ QUICK CONTACT SECTION ------------------------------ */
+
+.quick-contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+
+/* ---------- QUICK CONTACT SECTION HEADER ---------- */
+.quick-contact-section__header {
+  margin: 3rem 0.7rem 1rem 0.7rem;
+  max-width: 80%;
+  font-size: var(--header-2);
+  color: var(--bg-color);
+  text-align: center;
+}
+
+/* ---------- QUICK CONTACT SECTION SUBTEXT ---------- */
+.quick-contact-section__subtext {
+  max-width: 85%;
+  font-size: var(--text-big);
+  color: var(--fifth-color);
+  text-align: center;
+}
+
+/* ---------- QUICK CONTACT SECTION BUTTON ---------- */
+.quick-contact-section__button {
+  width: 20rem;
+  padding: 0.7rem;
+  margin: 2rem auto 3rem auto;
+  border: 2px solid var(--bg-color);
+  border-radius: 30px;
+  background-color: var(--dominant-color);
+  font-size: var(--text-big);
+  font-weight: bold;
+  color: var(--bg-color);
+  text-align: center;
+  text-decoration: none;
+  transition: width 0.3s ease, border 0.3s ease;
+}
+
+.quick-contact-section__button > div {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.quick-contact-section__button:hover > div {
+  transform: translateX(-1.2rem);
+}
+
+.quick-contact-section__button i {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.quick-contact-section__button:hover i {
+  opacity: 1;
+  transform: translateX(1.2rem);
+}
+
+/* ------------------------------ ABOUT SECTION ------------------------------ */
+
+.about-section {
+  background-color: var(--bg-color);
+}
+
+/* ---------- ABOUT SECTION HEADER ---------- */
+.about-section__header {
+  margin: 3rem 1.5rem 2rem 1.5rem;
+  font-size: var(--header-1);
+  font-weight: bold;
+  color: var(--dominant-color);
+  text-align: center;
+}
+
+/* ---------- ABOUT SECTION ITEMS WRAPPER ---------- */
+.about-section__items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem auto 3rem auto;
+  max-width: 90vw;
+}
+
+/* ---------- ABOUT SECTION ITEMS WRAPPER ITEM ---------- */
+.about-section__items-wrapper__item {
+  max-width: 100%;
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+.about-section__items-wrapper__item__icon {
+  vertical-align: middle;
+  font-size: 1.4rem;
+  color: var(--dominant-color);
+}
+
+.about-section__items-wrapper__item__header {
+  display: inline-block;
+  margin: 0.7rem auto 0.7rem auto;
+  vertical-align: middle;
+  font-size: var(--header-4);
+  font-weight: bold;
+  color: var(--accent-color);
+  text-align: left;
+}
+
+.about-section__items-wrapper__item__body {
+  line-height: 1.7rem;
+  font-size: var(--text-normal);
+}

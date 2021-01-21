@@ -1,0 +1,240 @@
+/* ------------------------------ BODY ------------------------------ */
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+/* ------------------------------ FORM SECTION ------------------------------ */
+
+.form-section {
+  /* height: 55rem; */
+  margin-top: 5rem;
+  background-image: url("../images/form-section-bg.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ---------- OVERLAY ---------- */
+.form-section__wrapper--overlay {
+  width: 100%;
+  /* height: 55rem; */
+  padding: 0.5rem;
+  background-color: hsl(239, 89%, 32%, 0.3);
+}
+
+/* ---------- WRAPPER ---------- */
+.form-section__wrapper {
+  margin: 2rem auto 3rem auto;
+  max-width: 55rem;
+  border: 2px solid var(--dominant-color);
+  border-radius: 20px;
+  /* padding: 1.2rem 1.2rem 0 1.2rem; */
+  /* background-color: rgba(255, 87, 20, 0.95); */
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--fourth-color);
+}
+
+/* ---------- HEADER & SUBTEXT ---------- */
+.form-section__wrapper__header {
+  margin: 1.5rem auto 0.5rem auto;
+  font-size: var(--header-2);
+  color: var(--dominant-color);
+  text-align: center;
+}
+
+.form-section__wrapper__subtext {
+  margin-bottom: 2rem;
+  font-size: var(--text-big);
+  text-align: center;
+}
+
+/* ---------- GENERAL STYLES ---------- */
+/* .form-section__wrapper__form>div[class^="form__"] {
+  margin-bottom: 1.5rem;
+} */
+
+.flex-item-1 > div[class^="form__"],
+.flex-item-2 > div[class^="form__"] {
+  margin-bottom: 1.5rem;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section select,
+.form-section textarea,
+.form-section input[type="submit"] {
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--fifth-color);
+  border-radius: 5px;
+  font: inherit;
+}
+
+/* ---------- PLACEHOLDER ---------- */
+.form-section input[type="text"]::placeholder,
+.form-section input[type="email"]::placeholder,
+.form-section input[type="tel"]::placeholder,
+.form-section textarea::placeholder {
+  opacity: 0.6;
+}
+
+/* ---------- FOCUS ANIMATION ---------- */
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section select,
+.form-section textarea {
+  background-color: var(--bg-color);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.form-section input[type="text"]:focus,
+.form-section input[type="email"]:focus,
+.form-section input[type="tel"]:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+  background-color: #fff1d7;
+  border-color: var(--accent-color);
+}
+
+/* ---------- HEADERS ---------- */
+.form__item-header {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+/* ---------- NAME ---------- */
+.form__name input {
+  background-image: url("../images/user.png");
+  background-position-x: 10px;
+  background-position-y: 40%;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.1rem;
+}
+
+/* ---------- EMAIL ---------- */
+.form__email input {
+  background-image: url("../images/at.png");
+  background-position-x: 10px;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.1rem;
+}
+
+/* ---------- PHONE ---------- */
+.form__phone input {
+  background-image: url("../images/phone.png");
+  background-position-x: 10px;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 1.1rem 1.1rem;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+
+/* ---------- GENDER ---------- */
+.form__gender__wrapper__item {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.form__gender input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-clip: content-box;
+  border: 1px solid var(--accent-color);
+  border-radius: 100%;
+  padding: 0.1rem;
+}
+
+.form__gender input:checked {
+  background-color: var(--dominant-color);
+}
+
+/* ---------- CONTACT REASON ---------- */
+.form__contact-reason select {
+  width: 15rem;
+  padding: 0.2rem;
+}
+
+/* ---------- SUBJECT ---------- */
+.form__message textarea {
+  height: 13.5rem;
+  resize: none;
+}
+
+.form__message textarea {
+  background-image: url("../images/pencil.png");
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.1rem;
+}
+
+/* ---------- AGREE TERMS ---------- */
+.form__agree-terms input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-clip: content-box;
+  border: 1px solid var(--accent-color);
+  padding: 0.06rem;
+}
+
+.form__agree-terms input:checked {
+  background-color: var(--dominant-color);
+}
+
+/* ---------- SUBMIT ---------- */
+.form__submit {
+  font-weight: bold;
+}
+
+.form__submit input {
+  padding: 0.5rem;
+  background-color: var(--dominant-color);
+  color: var(--bg-color);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.form__submit input:hover {
+  background-color: var(--fifth-color);
+  color: var(--fourth-color);
+}
+
+.form__submit input:active {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  transform: scale(0.95);
+}
+
+/* ---------- FLEX ---------- */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.flex-item-1 {
+  min-width: 21rem;
+  margin: 0.5rem;
+}
+
+.flex-item-2 {
+  min-width: 21rem;
+  margin: 0.5rem;
+}
